@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+body {
+    background-color: black;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    height: fit-content;
+}
+.logo {
+    width: fit-content;
+    height: fit-content;
+    font-size: 50px;
+    font-family: boldserrat;
+}
+.color-pink {
+    color: #ffb4d3;
+}
+.buttons {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    font-family: midserrat;
+}
+.home {
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+span {
+    height: auto;
+    width: auto;
+}
+.learn {
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about {
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.contact {
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #243241;
+    border-width: 0px;
+    font-size: 20px;
+    font-family: midserrat;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.textcont{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.top-text{
+    font-family: lato;
+    font-size: 70px;
+    gap: 3px;
+}
+.bottom{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+}
+.bottom-text{
+    font-family: midserrat;
+    font-size: 25px;
+}
+.get-started{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ceaaff;
+    border-width: 0px;
+    margin-top: 10px;
+}
+.color-black{
+    color: #10151a;
+}
+@font-face {
+    font-family: lato;
+    src: url(/fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: boldserrat;
+    src: url(/fonts/Montserrat-Bold.ttf	);
+}
+@font-face {
+    font-family: midserrat;
+    src: url(/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: semiserrat;
+    src: url(/fonts/Montserrat-SemiBold.ttf	);
+}
