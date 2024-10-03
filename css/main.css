@@ -4,7 +4,7 @@
     color: #fff;
 }
 body {
-    background-color: black;
+    background-color: #0A1117;
 }
 header {
     display: flex;
@@ -14,15 +14,25 @@ header {
     width: 100%;
     height: 100px;
     position: sticky;
+    top: 0;
+    z-index: 99;
 }
 main {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
 }
 a {
     text-decoration: none;
     height: fit-content;
+}
+img {
+    width: fit-content;
+    height: fit-content;
+}
+span {
+    height: auto;
+    width: auto;
 }
 .logo {
     width: fit-content;
@@ -33,7 +43,7 @@ a {
 .color-pink {
     color: #ffb4d3;
 }
-.buttons {
+.header-buttons {
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -47,10 +57,6 @@ a {
     border-width: 0px;
     font-size: 20px;
     font-weight: 500;
-}
-span {
-    height: auto;
-    width: auto;
 }
 .learn {
     background-color: transparent;
@@ -85,11 +91,12 @@ span {
     margin-right: 80px;
 }
 .textcont{
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 .top{
     display: flex;
@@ -114,33 +121,50 @@ span {
     font-size: 25px;
 }
 .get-started{
-    width: 80px;
-    height: 40px;
+    width: fit-content;
+    height: 50px;
     border-radius: 10px;
     background-color: #ceaaff;
     border-width: 0px;
-    margin-top: 10px;
+    margin-top: 50px;
+    font-size: 18px;
+    padding: 0px 40px 0px 40px;
+    font-family: boldserrat;
 }
 .color-black{
     color: #10151a;
 }
+.projectcont{
+    font-size: 50px;
+    font-family: lato;
+    margin: 50px;
+}
 @font-face {
     font-family: lato;
-    src: url(/fonts/Lato-Bold.ttf);
+    src: url(fonts/Lato-Bold.ttf);
 }
 @font-face {
     font-family: montserrat;
-    src: url(/fonts/Montserrat-Regular.ttf);
+    src: url(fonts/Montserrat-Regular.ttf);
 }
 @font-face {
     font-family: boldserrat;
-    src: url(/fonts/Montserrat-Bold.ttf	);
+    src: url(fonts/Montserrat-Bold.ttf	);
 }
 @font-face {
     font-family: midserrat;
-    src: url(/fonts/Montserrat-Medium.ttf);
+    src: url(fonts/Montserrat-Medium.ttf);
 }
 @font-face {
     font-family: semiserrat;
-    src: url(/fonts/Montserrat-SemiBold.ttf	);
+    src: url(fonts/Montserrat-SemiBold.ttf	);
+}
+:root {
+    color-scheme: dark;
+}
+
+.test{
+    width: auto;
+    height: 5000000px;
+    background-color: aqua;
 }
