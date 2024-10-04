@@ -3,10 +3,13 @@
     padding: 0;
     color: #fff;
 }
+
 body {
     background-color: #0A1117;
 }
+
 header {
+    background-color: #0A1117;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,32 +20,39 @@ header {
     top: 0;
     z-index: 99;
 }
+
 main {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
+
 a {
     text-decoration: none;
     height: fit-content;
 }
+
 img {
     width: fit-content;
     height: fit-content;
 }
+
 span {
     height: auto;
     width: auto;
 }
+
 .logo {
     width: fit-content;
     height: fit-content;
     font-size: 50px;
     font-family: boldserrat;
 }
+
 .color-pink {
     color: #ffb4d3;
 }
+
 .header-buttons {
     width: fit-content;
     height: fit-content;
@@ -52,30 +62,35 @@ span {
     gap: 50px;
     font-family: midserrat;
 }
+
 .home {
     background-color: transparent;
     border-width: 0px;
     font-size: 20px;
     font-weight: 500;
 }
+
 .learn {
     background-color: transparent;
     border-width: 0px;
     font-size: 20px;
     font-weight: 500;
 }
+
 .about {
     background-color: transparent;
     border-width: 0px;
     font-size: 20px;
     font-weight: 500;
 }
+
 .contact {
     background-color: transparent;
     border-width: 0px;
     font-size: 20px;
     font-weight: 500;
 }
+
 .login {
     display: flex;
     align-items: center;
@@ -90,7 +105,8 @@ span {
     margin-left: 80px;
     margin-right: 80px;
 }
-.textcont{
+
+.textcont {
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -98,17 +114,20 @@ span {
     align-items: center;
     margin-bottom: 80px;
 }
-.top{
+
+.top {
     display: flex;
     flex-direction: column;
     color: #fff;
 }
-.top-text{
+
+.top-text {
     font-family: lato;
     font-size: 70px;
     gap: 3px;
 }
-.bottom{
+
+.bottom {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
@@ -116,11 +135,13 @@ span {
     gap: 15px;
     color: #fff;
 }
-.bottom-text{
+
+.bottom-text {
     font-family: midserrat;
     font-size: 25px;
 }
-.get-started{
+
+.get-started {
     width: fit-content;
     height: 50px;
     border-radius: 10px;
@@ -131,40 +152,57 @@ span {
     padding: 0px 40px 0px 40px;
     font-family: boldserrat;
 }
-.color-black{
+
+.color-black {
     color: #10151a;
 }
-.projectcont{
+
+.projectcont {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectText {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+
     font-size: 50px;
     font-family: lato;
     margin: 50px;
 }
+
+
 @font-face {
     font-family: lato;
     src: url(fonts/Lato-Bold.ttf);
 }
+
 @font-face {
     font-family: montserrat;
     src: url(fonts/Montserrat-Regular.ttf);
 }
+
 @font-face {
     font-family: boldserrat;
     src: url(fonts/Montserrat-Bold.ttf	);
 }
+
 @font-face {
     font-family: midserrat;
     src: url(fonts/Montserrat-Medium.ttf);
 }
+
 @font-face {
     font-family: semiserrat;
     src: url(fonts/Montserrat-SemiBold.ttf	);
 }
+
 :root {
     color-scheme: dark;
-}
-
-.test{
-    width: auto;
-    height: 5000000px;
-    background-color: aqua;
 }
