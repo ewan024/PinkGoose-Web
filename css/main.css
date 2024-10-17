@@ -501,6 +501,49 @@ button {
     font-family: semiserrat;
 }
 
+.email-type-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email-type-bar {
+    background-color: #121E28;
+    
+    width: 500px;
+    height: 25px;
+
+    border-radius: 25px;
+    border: #2a3744;
+    border-width: 2px;
+    border-style: solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size:25px;
+    font-family: semiserrat;
+
+    padding: 20px;
+}
+
+.submit-email {
+    background-color: #ceaaff;
+
+    width: 100px;
+    height: 50px;
+
+    border-radius: 10px;
+    border-width: 0px;
+
+    margin-top: 50px;
+    padding: 0px 40px 0px 40px;
+
+    font-size: 18px;
+    font-family: boldserrat;
+}
+
 .color-pink {
     color: #ffb4d3;
 }
