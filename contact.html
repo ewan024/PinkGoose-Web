@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Pink Goose - Become A Real Goose</title>
+    <link rel="icon" type="image/x-icon" href="images/PinkGoose.ico">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <div class="logo">
+                <span>Pink</span>
+                <span class="color-pink">Goose</span>
+            </div>
+        </a>
+
+        <nav class="header-buttons">
+            <ul class="header-list">
+                <li class="home">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="learn">
+                    <a href="learn.html">Learn</a>
+                </li>
+
+                <li class="about">
+                    <a href="about.html">About</a>
+                </li>
+
+                <li class="contact">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="login" class="login">Login</button>
+
+    </header>
+
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" class="userInput" placeholder="Enter username">
+            <input type="password" class="userInput" placeholder="Enter password">
+            
+            <label for="checkbox" class="remember-me">
+                <input type="checkbox" checked> Remember me
+            </label>
+
+            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button>
+        </div>
+
+    </div>
+
+    <main>
+        <div class="goose-idea-cont">
+            <h1 class="goose-idea-text">What's your GOOSE idea?</h1>
+
+            <h2 class="goose-idea-text2 color-grey">Let’s chat and see how we can help</h2>
+
+            <div class="idea-box-cont">
+                <div class="idea-box bg-yellow">
+                    <div class="idea-img-cont">
+                        <img src="images/Icon_telegram.png" alt="telegram">
+                    </div>
+
+                    <div class="idea-text-cont">
+                        <span class="idea-text color-black">Telegram</span>
+                        <span class="idea-text2">@superdao_team</span>
+                    </div>
+                </div>
+
+                <div class="idea-box bg-purple">
+                    <div class="idea-img-cont">
+                        <img src="images/Icon_email.png" alt="email">
+                    </div>
+
+                    <div class="idea-text-cont">
+                        <span class="idea-text color-black">Email</span>
+                        <span class="idea-text2">hello@superdao.co</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-cont">
+            <h1 class="post-top-text">Send a post Goose</h1>
+
+            <div class="post-type-cont">
+                <input class="type-bar" placeholder="Your email">
+
+                <input class="type-bar" placeholder="Your name">
+
+                    <input class="type-bar-long" placeholder="Your message">
+
+                <select class="selection color-grey" required name="Goose color">
+                    <option value="hidden" selected disabled hidden>Color of your goose</option>
+                    <option value="red">Red</option>
+                    <option value="white">White</option>
+                    <option value="blue">Blue</option>
+                    <option value="black">Black</option>
+                </select>
+                
+                <input class="send color-black" type="submit" placeholder="Subscribe">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="dummyroom"></div>
+
+        <div class="footer-info-cont">
+            <div class="footer-info">About</div>
+
+            <div class="footer-info">Jobs</div>
+
+            <div class="footer-info">Legal</div>
+        </div>
+
+        <div class="socials-cont">
+            <div class="socials-images-cont">
+
+                <div class="socials-images bg-tp-light-blue">
+                    <img src="images/Frame.png" alt="twitter">
+                </div>
+
+                <div class="socials-images bg-tp-blue">
+                    <img src="images/telegram.png" alt="telegram">
+                </div>
+
+                <div class="socials-images bg-tp-red">
+                    <img src="images/youtube.png" alt="youtube">
+                </div>
+
+                <div class="socials-images bg-tp-purple">
+                    <img src="images/discord.png" alt="discord">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("modal");
+
+        var btn = document.getElementById("login");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
