@@ -2,86 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive settings -->
 
-    <title>Contact - Pink Goose - Become A Real Goose</title>
-    <link rel="icon" type="image/x-icon" href="images/PinkGoose.ico">
+    <title>Contact - Pink Goose - Become A Real Goose</title> <!-- Page title -->
+    <link rel="icon" type="image/x-icon" href="images/PinkGoose.ico"> <!-- Favicon -->
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to external CSS -->
 </head>
 
 <body>
     <header>
-        <a href="/">
+        <a href="/"> <!-- Logo linking to homepage -->
             <div class="logo">
                 <span>Pink</span>
-                <span class="color-pink">Goose</span>
+                <span class="color-pink">Goose</span> <!-- Logo with pink color -->
             </div>
         </a>
 
-        <nav class="header-buttons">
-            <ul class="header-list">
-                <li class="home">
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li class="learn">
-                    <a href="learn.html">Learn</a>
-                </li>
-
-                <li class="about">
-                    <a href="about.html">About</a>
-                </li>
-
-                <li class="contact">
-                    <a href="contact.html">Contact</a>
-                </li>
+        <nav class="header-buttons"> <!-- Navigation menu -->
+            <ul class="header-list"> <!-- Unordered list for nav items -->
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="learn"><a href="learn.html">Learn</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button id="login" class="login">Login</button>
-
+        <button id="login" class="login">Login</button> <!-- Login button -->
     </header>
 
-    <div id="modal" class="modal">
-
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <input type="text" class="userInput" placeholder="Enter username">
-            <input type="password" class="userInput" placeholder="Enter password">
+    <div id="modal" class="modal"> <!-- Login modal -->
+        <div class="modal-content"> <!-- Modal content area -->
+            <span class="close">&times;</span> <!-- Close button -->
+            <input type="text" class="userInput" placeholder="Enter username"> <!-- Username input -->
+            <input type="password" class="userInput" placeholder="Enter password"> <!-- Password input -->
             
-            <label for="checkbox" class="remember-me">
+            <label for="checkbox" class="remember-me"> <!-- Remember me checkbox -->
                 <input type="checkbox" checked> Remember me
             </label>
 
-            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button>
+            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button> <!-- Submit button -->
         </div>
-
     </div>
 
     <main>
-        <div class="goose-idea-cont">
-            <h1 class="goose-idea-text">What's your GOOSE idea?</h1>
+        <div class="goose-idea-cont"> <!-- Goose idea section -->
+            <h1 class="goose-idea-text">What's your GOOSE idea?</h1> <!-- Section heading -->
+            <h2 class="goose-idea-text2 color-grey">Let’s chat and see how we can help</h2> <!-- Subtitle -->
 
-            <h2 class="goose-idea-text2 color-grey">Let’s chat and see how we can help</h2>
-
-            <div class="idea-box-cont">
-                <div class="idea-box bg-yellow">
+            <div class="idea-box-cont"> <!-- Container for contact options -->
+                <div class="idea-box bg-yellow"> <!-- Telegram contact box -->
                     <div class="idea-img-cont">
                         <img src="images/Icon_telegram.png" alt="telegram">
                     </div>
-
                     <div class="idea-text-cont">
                         <span class="idea-text color-black">Telegram</span>
                         <span class="idea-text2">@superdao_team</span>
                     </div>
                 </div>
 
-                <div class="idea-box bg-purple">
+                <div class="idea-box bg-purple"> <!-- Email contact box -->
                     <div class="idea-img-cont">
                         <img src="images/Icon_email.png" alt="email">
                     </div>
-
                     <div class="idea-text-cont">
                         <span class="idea-text color-black">Email</span>
                         <span class="idea-text2">hello@superdao.co</span>
@@ -90,17 +73,15 @@
             </div>
         </div>
 
-        <div class="post-cont">
-            <h1 class="post-top-text">Send a post Goose</h1>
+        <div class="post-cont"> <!-- Message submission section -->
+            <h1 class="post-top-text">Send a post Goose</h1> <!-- Section heading -->
 
-            <div class="post-type-cont">
-                <input class="type-bar" placeholder="Your email">
+            <div class="post-type-cont"> <!-- Input container for message -->
+                <input class="type-bar" placeholder="Your email"> <!-- Email input -->
+                <input class="type-bar" placeholder="Your name"> <!-- Name input -->
+                <input class="type-bar-long" placeholder="Your message"> <!-- Message input -->
 
-                <input class="type-bar" placeholder="Your name">
-
-                    <input class="type-bar-long" placeholder="Your message">
-
-                <select class="selection color-grey" required name="Goose color">
+                <select class="selection color-grey" required name="Goose color"> <!-- Dropdown for goose color -->
                     <option value="hidden" selected disabled hidden>Color of your goose</option>
                     <option value="red">Red</option>
                     <option value="white">White</option>
@@ -108,37 +89,31 @@
                     <option value="black">Black</option>
                 </select>
                 
-                <input class="send color-black" type="submit" placeholder="Subscribe">
+                <input class="send color-black" type="submit" placeholder="Subscribe"> <!-- Submit button -->
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="dummyroom"></div>
+    <footer> <!-- Footer section -->
+        <div class="dummyroom"></div> <!-- Placeholder for layout -->
 
-        <div class="footer-info-cont">
+        <div class="footer-info-cont"> <!-- Footer information links -->
             <div class="footer-info">About</div>
-
             <div class="footer-info">Jobs</div>
-
             <div class="footer-info">Legal</div>
         </div>
 
-        <div class="socials-cont">
+        <div class="socials-cont"> <!-- Social media links -->
             <div class="socials-images-cont">
-
                 <div class="socials-images bg-tp-light-blue">
                     <img src="images/Frame.png" alt="twitter">
                 </div>
-
                 <div class="socials-images bg-tp-blue">
                     <img src="images/telegram.png" alt="telegram">
                 </div>
-
                 <div class="socials-images bg-tp-red">
                     <img src="images/youtube.png" alt="youtube">
                 </div>
-
                 <div class="socials-images bg-tp-purple">
                     <img src="images/discord.png" alt="discord">
                 </div>
@@ -147,20 +122,21 @@
     </footer>
 
     <script>
-        var modal = document.getElementById("modal");
+        var modal = document.getElementById("modal"); // Modal reference
+        var btn = document.getElementById("login"); // Login button reference
+        var span = document.getElementsByClassName("close")[0]; // Close button reference
 
-        var btn = document.getElementById("login");
-
-        var span = document.getElementsByClassName("close")[0];
-
+        // Open modal when login button is clicked
         btn.onclick = function () {
             modal.style.display = "block";
         }
 
+        // Close modal when close button is clicked
         span.onclick = function () {
             modal.style.display = "none";
         }
 
+        // Close modal when clicking outside of it
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";

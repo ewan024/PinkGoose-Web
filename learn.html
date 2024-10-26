@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
 
-    <title>Learn - Pink Goose - Become A Real Goose</title>
-    <link rel="icon" type="image/x-icon" href="images/PinkGoose.ico">
+    <title>Learn - Pink Goose - Become A Real Goose</title> <!-- Page title -->
+    <link rel="icon" type="image/x-icon" href="images/PinkGoose.ico"> <!-- Favicon -->
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to external CSS file -->
 </head>
+
 <body>
     <header>
-        <a href="/">
-            <div class="logo">
+        <a href="/"> <!-- Link to homepage -->
+            <div class="logo"> <!-- Logo container -->
                 <span>Pink</span>
-                <span class="color-pink">Goose</span>
+                <span class="color-pink">Goose</span> <!-- Logo with pink styling -->
             </div>
         </a>
 
-        <nav class="header-buttons">
-            <ul class="header-list">
-                <li class="home">
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li class="learn">
-                    <a href="learn.html">Learn</a>
-                </li>
-
-                <li class="about">
-                    <a href="about.html">About</a>
-                </li>
-
-                <li class="contact">
-                    <a href="contact.html">Contact</a>
-                </li>
+        <nav class="header-buttons"> <!-- Navigation menu -->
+            <ul class="header-list"> <!-- Unordered list for nav items -->
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="learn"><a href="learn.html">Learn</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
-        <button id="login" class="login">Login</button>
-
+        <button id="login" class="login">Login</button> <!-- Login button -->
     </header>
 
-    <div id="modal" class="modal">
-
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <input type="text" class="userInput" placeholder="Enter username">
-            <input type="password" class="userInput" placeholder="Enter password">
+    <div id="modal" class="modal"> <!-- Modal for login -->
+        <div class="modal-content"> <!-- Modal content area -->
+            <span class="close">&times;</span> <!-- Close button for modal -->
+            <input type="text" class="userInput" placeholder="Enter username"> <!-- Username input -->
+            <input type="password" class="userInput" placeholder="Enter password"> <!-- Password input -->
             
-            <label for="checkbox" class="remember-me">
+            <label for="checkbox" class="remember-me"> <!-- Label for remember me checkbox -->
                 <input type="checkbox" checked> Remember me
             </label>
 
-            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button>
+            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button> <!-- Submit button -->
         </div>
-
     </div>
 
     <main>
-        <div class="text-cont">
+        <div class="text-cont"> <!-- Main text content area -->
             <div class="top">
                 <h1 class="top-text">The easiest way</h1>
                 <h1 class="top-text">to start a Goose</h1>
@@ -71,87 +59,62 @@
             </div>
 
             <button class="get-started">
-                <a class="color-black" href="#">Get Started</a>
+                <a class="color-black" href="#">Get Started</a> <!-- Get started button -->
             </button>
         </div>
 
         <div class="img-cont">
-            <img class="arrow" src="images/arrow.png" alt="arrow">
+            <img class="arrow" src="images/arrow.png" alt="arrow"> <!-- Arrow image -->
         </div>
 
-        <div class="project-cont">
+        <div class="project-cont"> <!-- Project section -->
             <div class="project-text">
-                <h1>Ready for every project</h1>
+                <h1>Ready for every project</h1> <!-- Heading for projects -->
             </div>
 
-            <div class="DAO-row-wrap">
+            <div class="DAO-row-wrap"> <!-- DAO types row -->
+                <div class="DAO-text"><span class="color-pink">Investment DAO</span></div>
+                <div class="DAO-text"><span class="color-yellow">Startup DAO</span></div>
+                <div class="DAO-text"><span class="color-purple">Service DAO</span></div>
+                <div class="DAO-text"><span class="color-baby-blue">Community DAO</span></div>
+                <div class="DAO-text"><span class="color-blue">Impact DAO</span></div>
+                <div class="DAO-text"><span class="color-skin">DeFi DAO</span></div>
                 <div class="DAO-text">
-                    <span class="color-pink">Investment DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-yellow">Startup DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-purple">Service DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-baby-blue">Community DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-blue">Impact DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-skin">DeFi DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <img src="images/StarMore.png" alt="plus">
+                    <img src="images/StarMore.png" alt="plus"> <!-- Plus icon -->
                     <span class="color-grey">More</span>
                 </div>
             </div>
 
             <div class="image-cont">
-                <img src="images/projectImage.png" alt="project image">
-
+                <img src="images/projectImage.png" alt="project image"> <!-- Project image -->
                 <div class="DAO-text1">
-                    <span class="color-black">1000+ projects launched on SuperDAO</span>
+                    <span class="color-black">1000+ projects launched on SuperDAO</span> <!-- Projects launched info -->
                 </div>
             </div>
         </div>
 
-        <div class="designs-text-cont">
+        <div class="designs-text-cont"> <!-- Design services section -->
             <div class="designs-top-text">
-                <h1>Designed for the full journey</h1>
+                <h1>Designed for the full journey</h1> <!-- Heading for design services -->
             </div>
 
-            <div class="designs-info-text">
+            <div class="designs-info-text"> <!-- List of design services -->
                 <span class="design-text">Organization design</span>
-
                 <span class="design-text">Smart contract development</span>
-
                 <span class="design-text">Fundraising</span>
-
                 <span class="design-text">Launch marketing</span>
-
                 <span class="design-text">Member onboarding</span>
-
                 <span class="design-text">Contributor management</span>
-
                 <span class="design-text">GOOSE operations</span>
             </div>
         </div>
         
-        <div class="work-with-cont">
+        <div class="work-with-cont"> <!-- Partnerships section -->
             <div class="work-with-top-text">
-                <h1 class="works-with">Works with</h1>
+                <h1 class="works-with">Works with</h1> <!-- Heading for partners -->
             </div>
 
-            <div class="work-with-boxes">
+            <div class="work-with-boxes"> <!-- Partner logos section -->
                 <div class="work-with-box-cont">
                     <div class="work-with-box"><img src="images/Icon_ethereum.png" alt="icon"></div>
                     <span class="work-with-text">Ethereum</span>
@@ -185,32 +148,26 @@
         </div>
     </main>
 
-    <footer>
-        <div class="dummyroom"></div>
+    <footer> <!-- Footer section -->
+        <div class="dummyroom"></div> <!-- Empty space for layout -->
 
-        <div class="footer-info-cont">
+        <div class="footer-info-cont"> <!-- Footer info links -->
             <div class="footer-info">About</div>
-
             <div class="footer-info">Jobs</div>
-
             <div class="footer-info">Legal</div>
         </div>
 
-        <div class="socials-cont">
+        <div class="socials-cont"> <!-- Social media links section -->
             <div class="socials-images-cont">
-
                 <div class="socials-images bg-tp-light-blue">
                     <img src="images/Frame.png" alt="twitter">
                 </div>
-
                 <div class="socials-images bg-tp-blue">
                     <img src="images/telegram.png" alt="telegram">
                 </div>
-
                 <div class="socials-images bg-tp-red">
                     <img src="images/youtube.png" alt="youtube">
                 </div>
-
                 <div class="socials-images bg-tp-purple">
                     <img src="images/discord.png" alt="discord">
                 </div>
@@ -219,20 +176,21 @@
     </footer>
 
     <script>
-        var modal = document.getElementById("modal");
+        var modal = document.getElementById("modal"); // Modal reference
+        var btn = document.getElementById("login"); // Login button reference
+        var span = document.getElementsByClassName("close")[0]; // Close button reference
 
-        var btn = document.getElementById("login");
-
-        var span = document.getElementsByClassName("close")[0];
-
+        // Open modal when login button is clicked
         btn.onclick = function () {
             modal.style.display = "block";
         }
 
+        // Close modal when close button is clicked
         span.onclick = function () {
             modal.style.display = "none";
         }
 
+        // Close modal when clicking outside of it
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
@@ -240,4 +198,5 @@
         }
     </script>
 </body>
+
 </html>

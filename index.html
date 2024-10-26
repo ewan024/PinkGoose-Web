@@ -2,66 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
 
-    <title>Home - Pink Goose - Become A Real Goose</title>
-    <link rel="icon" type="image/x-icon" href="images/PinkGoose.ico">
+    <title>Home - Pink Goose - Become A Real Goose</title> <!-- Page title -->
+    <link rel="icon" type="image/x-icon" href="images/PinkGoose.ico"> <!-- Favicon -->
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to external CSS file -->
 </head>
 
 <body>
     <header>
-        <a href="/">
-            <div class="logo">
+        <a href="/"> <!-- Link to homepage -->
+            <div class="logo"> <!-- Logo container -->
                 <span>Pink</span>
-                <span class="color-pink">Goose</span>
+                <span class="color-pink">Goose</span> <!-- Logo with pink styling -->
             </div>
         </a>
 
-        <nav class="header-buttons">
-            <ul class="header-list">
-                <li class="home">
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li class="learn">
-                    <a href="learn.html">Learn</a>
-                </li>
-
-                <li class="about">
-                    <a href="about.html">About</a>
-                </li>
-
-                <li class="contact">
-                    <a href="contact.html">Contact</a>
-                </li>
+        <nav class="header-buttons"> <!-- Navigation menu -->
+            <ul class="header-list"> <!-- Unordered list for nav items -->
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="learn"><a href="learn.html">Learn</a></li>
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <button id="login" class="login">Login</button>
-
+        <button id="login" class="login">Login</button> <!-- Login button -->
     </header>
 
-    <div id="modal" class="modal">
-
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <input type="text" class="userInput" placeholder="Enter username">
-            <input type="password" class="userInput" placeholder="Emter password">
+    <div id="modal" class="modal"> <!-- Modal for login -->
+        <div class="modal-content"> <!-- Modal content area -->
+            <span class="close">&times;</span> <!-- Close button for modal -->
+            <input type="text" class="userInput" placeholder="Enter username"> <!-- Username input -->
+            <input type="password" class="userInput" placeholder="Enter password"> <!-- Password input -->
             
-            <label for="checkbox" class="remember-me">
+            <label for="checkbox" class="remember-me"> <!-- Label for remember me checkbox -->
                 <input type="checkbox" checked> Remember me
             </label>
 
-            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button>
+            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button> <!-- Submit button -->
         </div>
-
     </div>
 
     <main>
-        <div class="text-cont">
+        <div class="text-cont"> <!-- Main text content area -->
             <div class="top">
                 <h1 class="top-text">The easiest way</h1>
                 <h1 class="top-text">to start a Goose</h1>
@@ -73,87 +59,63 @@
             </div>
 
             <button class="get-started">
-                <a class="color-black" href="#">Get Started</a>
+                <a class="color-black" href="#">Get Started</a> <!-- Get started button -->
             </button>
         </div>
 
         <div class="img-cont">
-            <img class="arrow" src="images/arrow.png" alt="arrow">
+            <img class="arrow" src="images/arrow.png" alt="arrow"> <!-- Arrow image -->
         </div>
 
-        <div class="project-cont">
+        <div class="project-cont"> <!-- Project section -->
             <div class="project-text">
-                <h1>Ready for every project</h1>
+                <h1>Ready for every project</h1> <!-- Heading for projects -->
             </div>
 
-            <div class="DAO-row-wrap">
+            <div class="DAO-row-wrap"> <!-- DAO types row -->
+                <div class="DAO-text"><span class="color-pink">Investment DAO</span></div>
+                <div class="DAO-text"><span class="color-yellow">Startup DAO</span></div>
+                <div class="DAO-text"><span class="color-purple">Service DAO</span></div>
+                <div class="DAO-text"><span class="color-baby-blue">Community DAO</span></div>
+                <div class="DAO-text"><span class="color-blue">Impact DAO</span></div>
+                <div class="DAO-text"><span class="color-skin">DeFi DAO</span></div>
                 <div class="DAO-text">
-                    <span class="color-pink">Investment DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-yellow">Startup DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-purple">Service DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-baby-blue">Community DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-blue">Impact DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <span class="color-skin">DeFi DAO</span>
-                </div>
-
-                <div class="DAO-text">
-                    <img src="images/StarMore.png" alt="plus">
+                    <img src="images/StarMore.png" alt="plus"> <!-- Plus icon -->
                     <span class="color-grey">More</span>
                 </div>
             </div>
 
             <div class="image-cont">
-                <img src="images/projectImage.png" alt="project image">
+                <img src="images/projectImage.png" alt="project image"> <!-- Project image -->
 
                 <div class="DAO-text1">
-                    <span class="color-black">1000+ projects launched on SuperDAO</span>
+                    <span class="color-black">1000+ projects launched on SuperDAO</span> <!-- Projects launched info -->
                 </div>
             </div>
         </div>
 
-        <div class="designs-text-cont">
+        <div class="designs-text-cont"> <!-- Design services section -->
             <div class="designs-top-text">
-                <h1>Designed for the full journey</h1>
+                <h1>Designed for the full journey</h1> <!-- Heading for design services -->
             </div>
 
-            <div class="designs-info-text">
+            <div class="designs-info-text"> <!-- List of design services -->
                 <span class="design-text">Organization design</span>
-
                 <span class="design-text">Smart contract development</span>
-
                 <span class="design-text">Fundraising</span>
-
                 <span class="design-text">Launch marketing</span>
-
                 <span class="design-text">Member onboarding</span>
-
                 <span class="design-text">Contributor management</span>
-
                 <span class="design-text">GOOSE operations</span>
             </div>
         </div>
 
-        <div class="work-with-cont">
+        <div class="work-with-cont"> <!-- Partnerships section -->
             <div class="work-with-top-text">
-                <h1 class="works-with">Works with</h1>
+                <h1 class="works-with">Works with</h1> <!-- Heading for partners -->
             </div>
 
-            <div class="work-with-boxes">
+            <div class="work-with-boxes"> <!-- Partner logos section -->
                 <div class="work-with-box-cont">
                     <div class="work-with-box"><img src="images/Icon_ethereum.png" alt="icon"></div>
                     <span class="work-with-text">Ethereum</span>
@@ -186,11 +148,11 @@
             </div>
         </div>
 
-        <div class="help-cont">
+        <div class="help-cont"> <!-- Help section -->
             <h1 class="help-top-text">Help at every step</h1>
         </div>
 
-        <div class="people-img-cont">
+        <div class="people-img-cont"> <!-- Team images section -->
             <img src="images/Frame 5683.png" alt="white guy, no moustache">
             <img src="images/Frame 5689.png" alt="asian girl">
             <img src="images/Frame 5684.png" alt="white guy, moustache">
@@ -198,122 +160,95 @@
             <img src="images/Frame 5690.png" alt="average baddie">
         </div>
 
-        <div class="help-text-cont">
+        <div class="help-text-cont"> <!-- Help resources section -->
             <span class="help-text">Success managers <img src="images/Star 20.png"> Knowledge base</span>
-            <span class="help-text">Chat support <img src="images/Star 23.png"> Tutorials <img src="images/Star 22.png">
-                Templates</span>
-            <span class="help-text">Smart Contact development <img src="images/Star 21.png"> Event</span>
+            <span class="help-text">Chat support <img src="images/Star 23.png"> Tutorials <img src="images/Star 22.png"> Templates</span>
+            <span class="help-text">Smart Contract development <img src="images/Star 21.png"> Event</span>
             <span class="help-text">Education <img src="images/Star 24.png"> Guides</span>
         </div>
 
-        <div class="email-cont">
+        <div class="email-cont"> <!-- Newsletter subscription section -->
             <h1 class="email-top-text">Weekly digest</h1>
 
             <h3 class="latest-news">Latest news DOAs and Web3</h3>
 
             <div class="email-type-cont">
-                <input class="email-type-bar" type="email" name="email" id="email" placeholder="Your email">
+                <input class="email-type-bar" type="email" name="email" id="email" placeholder="Your email"> <!-- Email input -->
 
-                <button class="submit-email color-black" onclick="document.getElementById('email').value = ''">Submit</button>
+                <button class="submit-email color-black" onclick="document.getElementById('email').value = ''">Submit</button> <!-- Submit button for email -->
             </div>
         </div>
 
-        <div class="press-podcast-cont">
+        <div class="press-podcast-cont"> <!-- Press section -->
             <h1 class="press-podcast-top-text">Press<h1>
-
-                    <div class="see-all-text color-grey">See all →</div>
+            <div class="see-all-text color-grey">See all →</div> <!-- Link to see all press articles -->
         </div>
 
-        <div class="press-podcast-box-cont">
+        <div class="press-podcast-box-cont"> <!-- Press articles section -->
             <div class="press-box bg-light-blue">
                 <img class="press-podcast-img" src="images/decrypt.png" alt="decrypt">
-
-                <p class="press-text color-black">Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform
-                </p>
-
-                <p class="press-text2 color-black">Superdao aims to make it easier for online communities to build and
-                    launch DAOs</p>
-
+                <p class="press-text color-black">Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform</p>
+                <p class="press-text2 color-black">Superdao aims to make it easier for online communities to build and launch DAOs</p>
                 <button class="read color-black">Read →</button>
             </div>
 
             <div class="press-box bg-purple">
                 <img class="press-podcast-img" src="images/blockworks.png" alt="blockworks">
-
                 <p class="press-text color-black">The Y Combinator of Web3 Attracts Record Number of DAO Startups</p>
-
-                <p class="press-text2 color-black">DAOs and related startups made up an “overwhelming number of
-                    applicants” for a Web3 accelerator’s cohort this year</p>
-
+                <p class="press-text2 color-black">DAOs and related startups made up an “overwhelming number of applicants” for a Web3 accelerator’s cohort this year</p>
                 <button class="read2 color-black">Read →</button>
             </div>
 
             <div class="press-box bg-light-yellow">
                 <img class="press-podcast-img" src="images/techcrunch.png" alt="techcrunch">
-
                 <p class="press-text color-black">VC-backed DAO startups are racing to define what DAOs actually are</p>
-
-                <p class="press-text2 color-black">Not all 'decentralized autonomous organizations' are autonomous... or
-                    decentralized</p>
-
+                <p class="press-text2 color-black">Not all 'decentralized autonomous organizations' are autonomous... or decentralized</p>
                 <button class="read color-black">Read →</button>
             </div>
         </div>
 
-        <div class="press-podcast-cont">
+        <div class="press-podcast-cont"> <!-- Podcast section -->
             <h1 class="press-podcast-top-text">Podcast<h1>
-
-                    <div class="see-all-text color-grey">See all →</div>
+            <div class="see-all-text color-grey">See all →</div> <!-- Link to see all podcasts -->
         </div>
 
-        <div class="press-podcast-box-cont">
+        <div class="press-podcast-box-cont"> <!-- Podcast episodes section -->
             <div class="podcast-box">
                 <img class="press-podcast-img" src="images/thepompPodcast.png" alt="thePompPodcast">
-
                 <p class="podcast-text">Understanding DAOs with Yury Lifshits</p>
-
                 <p class="podcast-text2 color-grey">The Pomp Podcast</p>
                 <p class="podcast-text3 color-grey">by Anthony Pompliano</p>
-
                 <button class="listen"> Listen →</button>
             </div>
 
             <div class="podcast-box">
                 <img class="press-podcast-img" src="images/theUnstoppablePodcast.png" alt="theUnstoppablePodcast">
-
                 <p class="podcast-text">Everything You Need to Know About DAOs with Yury Lifshits from Superdao</p>
-
                 <p class="podcast-text2 color-grey">The Unstoppable Podcast</p>
                 <p class="podcast-text3 color-grey">by Josh Gordon</p>
-
                 <button class="watch"> Watch →</button>
             </div>
 
             <div class="podcast-box">
                 <img class="press-podcast-img" src="images/zimaRed.png" alt="zimaRed">
-
                 <p class="podcast-text">Yury Lifshits - Superdao: The “Shopify” for DAOs</p>
-
                 <p class="podcast-text2 color-grey">Zima Red</p>
                 <p class="podcast-text3 color-grey">by Andrew Stainworld</p>
-
                 <button class="listen"> Listen →</button>
             </div>
         </div>
 
-        <img class="stars" src="images/Group 5597.png" alt="stars">
+        <img class="stars" src="images/Group 5597.png" alt="stars"> <!-- Decorative stars image -->
 
-        <div class="goose-idea-cont">
+        <div class="goose-idea-cont"> <!-- Contact section for ideas -->
             <h1 class="goose-idea-text">What's your GOOSE idea?</h1>
-
             <h2 class="goose-idea-text2 color-grey">Let’s chat and see how we can help</h2>
 
-            <div class="idea-box-cont">
+            <div class="idea-box-cont"> <!-- Idea contact options -->
                 <div class="idea-box bg-yellow">
                     <div class="idea-img-cont">
                         <img src="images/Icon_telegram.png" alt="telegram">
                     </div>
-
                     <div class="idea-text-cont">
                         <span class="idea-text color-black">Telegram</span>
                         <span class="idea-text2">@superdao_team</span>
@@ -324,7 +259,6 @@
                     <div class="idea-img-cont">
                         <img src="images/Icon_email.png" alt="email">
                     </div>
-
                     <div class="idea-text-cont">
                         <span class="idea-text color-black">Email</span>
                         <span class="idea-text2">hello@superdao.co</span>
@@ -334,32 +268,26 @@
         </div>
     </main>
 
-    <footer>
-        <div class="dummyroom"></div>
+    <footer> <!-- Footer section -->
+        <div class="dummyroom"></div> <!-- Empty space for layout -->
 
-        <div class="footer-info-cont">
+        <div class="footer-info-cont"> <!-- Footer info links -->
             <div class="footer-info">About</div>
-
             <div class="footer-info">Jobs</div>
-
             <div class="footer-info">Legal</div>
         </div>
 
-        <div class="socials-cont">
+        <div class="socials-cont"> <!-- Social media links section -->
             <div class="socials-images-cont">
-
                 <div class="socials-images bg-tp-light-blue">
                     <img src="images/Frame.png" alt="twitter">
                 </div>
-
                 <div class="socials-images bg-tp-blue">
                     <img src="images/telegram.png" alt="telegram">
                 </div>
-
                 <div class="socials-images bg-tp-red">
                     <img src="images/youtube.png" alt="youtube">
                 </div>
-
                 <div class="socials-images bg-tp-purple">
                     <img src="images/discord.png" alt="discord">
                 </div>
@@ -368,20 +296,21 @@
     </footer>
 
     <script>
-        var modal = document.getElementById("modal");
+        var modal = document.getElementById("modal"); // Modal reference
+        var btn = document.getElementById("login"); // Login button reference
+        var span = document.getElementsByClassName("close")[0]; // Close button reference
 
-        var btn = document.getElementById("login");
-
-        var span = document.getElementsByClassName("close")[0];
-
+        // Open modal when login button is clicked
         btn.onclick = function () {
             modal.style.display = "block";
         }
 
+        // Close modal when close button is clicked
         span.onclick = function () {
             modal.style.display = "none";
         }
 
+        // Close modal when clicking outside of it
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
