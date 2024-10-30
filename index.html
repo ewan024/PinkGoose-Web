@@ -33,7 +33,7 @@
     </header>
 
     <div id="modal" class="modal"> <!-- Modal for login -->
-        <div class="modal-content"> <!-- Modal content area -->
+        <form class="modal-content"> <!-- Modal content area -->
             <span class="close">&times;</span> <!-- Close button for modal -->
             <input type="text" class="userInput" placeholder="Enter username"> <!-- Username input -->
             <input type="password" class="userInput" placeholder="Enter password"> <!-- Password input -->
@@ -42,8 +42,8 @@
                 <input type="checkbox" checked> Remember me
             </label>
 
-            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button> <!-- Submit button -->
-        </div>
+            <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[0].value = ''">Submit</button> <!-- Submit button -->
+        </form>
     </div>
 
     <main>
@@ -167,7 +167,7 @@
             <span class="help-text">Education <img src="images/Star 24.png"> Guides</span>
         </div>
 
-        <div class="email-cont"> <!-- Newsletter subscription section -->
+        <form class="email-cont"> <!-- Newsletter subscription section -->
             <h1 class="email-top-text">Weekly digest</h1>
 
             <h3 class="latest-news">Latest news DOAs and Web3</h3>
@@ -175,9 +175,9 @@
             <div class="email-type-cont">
                 <input class="email-type-bar" type="email" name="email" id="email" placeholder="Your email"> <!-- Email input -->
 
-                <button class="submit-email color-black" onclick="document.getElementById('email').value = ''">Submit</button> <!-- Submit button for email -->
+                <a href="https://www.youtube.com/watch?v=Bkjv2Cb_jEQ"><button class="submit-email color-black" onclick="document.getElementById('email').value = ''">Submit</button></a> <!-- Submit button for email -->
             </div>
-        </div>
+        </form>
 
         <div class="press-podcast-cont"> <!-- Press section -->
             <h1 class="press-podcast-top-text">Press<h1>
@@ -189,21 +189,21 @@
                 <img class="press-podcast-img" src="images/decrypt.png" alt="decrypt">
                 <p class="press-text color-black">Superdao Raises $10.5 Million to Build an 'All-in-One' DAO Platform</p>
                 <p class="press-text2 color-black">Superdao aims to make it easier for online communities to build and launch DAOs</p>
-                <button class="read color-black">Read →</button>
+                <a href="https://decrypt.co/91311/superdao-raises-10-5-million-all-in-one-dao-builder" class="read color-black">Read →</a>
             </div>
 
             <div class="press-box bg-purple">
                 <img class="press-podcast-img" src="images/blockworks.png" alt="blockworks">
                 <p class="press-text color-black">The Y Combinator of Web3 Attracts Record Number of DAO Startups</p>
                 <p class="press-text2 color-black">DAOs and related startups made up an “overwhelming number of applicants” for a Web3 accelerator’s cohort this year</p>
-                <button class="read2 color-black">Read →</button>
+                <a href="https://blockworks.co/news/the-y-combinator-of-web3-attracts-record-number-of-dao-startups" class="read2 color-black">Read →</a>
             </div>
 
             <div class="press-box bg-light-yellow">
                 <img class="press-podcast-img" src="images/techcrunch.png" alt="techcrunch">
                 <p class="press-text color-black">VC-backed DAO startups are racing to define what DAOs actually are</p>
                 <p class="press-text2 color-black">Not all 'decentralized autonomous organizations' are autonomous... or decentralized</p>
-                <button class="read color-black">Read →</button>
+                <a href="https://techcrunch.com/2022/02/01/vc-backed-dao-startups-are-racing-to-define-what-daos-actually-are/" class="read color-black">Read →</a>
             </div>
         </div>
 

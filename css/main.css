@@ -1,3 +1,4 @@
+/* Geen commentaar */
 * {
     color: #fff;
 
@@ -611,7 +612,16 @@ footer {
 
     font-size: 25px;
     font-family: semiserrat;
+
     cursor: pointer;
+
+    transition: scale 0.3s ease;
+}
+
+.submit-email:hover {
+    transform: scale(1.0);
+
+    transition: scale 0.3s ease;
 }
 
 .press-podcast-cont {

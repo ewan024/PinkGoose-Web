@@ -33,7 +33,7 @@
     </header>
 
     <div id="modal" class="modal"> <!-- Login modal -->
-        <div class="modal-content"> <!-- Modal content area -->
+        <form class="modal-content"> <!-- Modal content area -->
             <span class="close">&times;</span> <!-- Close button -->
             <input type="text" class="userInput" placeholder="Enter username"> <!-- Username input -->
             <input type="password" class="userInput" placeholder="Enter password"> <!-- Password input -->
@@ -43,7 +43,7 @@
             </label>
 
             <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button> <!-- Submit button -->
-        </div>
+        </form>
     </div>
 
     <main>
@@ -74,7 +74,7 @@
             </div>
         </div>
 
-        <div class="email-cont"> <!-- Newsletter subscription section -->
+        <form class="email-cont"> <!-- Newsletter subscription section -->
             <h1 class="email-top-text">Weekly digest</h1> <!-- Section heading -->
             <h3 class="latest-news">Latest news DOAs and Web3</h3> <!-- Subtitle -->
 
@@ -82,7 +82,7 @@
                 <input class="email-type-bar" type="email" name="email" id="email" placeholder="Your email"> <!-- Email input -->
                 <button class="submit-email color-black" onclick="document.getElementById('email').value = ''">Submit</button> <!-- Submit button -->
             </div>
-        </div>
+        </form>
 
         <div class="press-podcast-cont"> <!-- Press section -->
             <h1 class="press-podcast-top-text">Press</h1> <!-- Section heading -->

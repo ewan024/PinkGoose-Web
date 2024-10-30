@@ -32,7 +32,7 @@
     </header>
 
     <div id="modal" class="modal"> <!-- Login modal -->
-        <div class="modal-content"> <!-- Modal content area -->
+        <form class="modal-content"> <!-- Modal content area -->
             <span class="close">&times;</span> <!-- Close button -->
             <input type="text" class="userInput" placeholder="Enter username"> <!-- Username input -->
             <input type="password" class="userInput" placeholder="Enter password"> <!-- Password input -->
@@ -42,7 +42,7 @@
             </label>
 
             <button class="submit color-black" onclick="document.getElementsByClassName('userInput')[1].value = ''">Submit</button> <!-- Submit button -->
-        </div>
+        </form>
     </div>
 
     <main>
@@ -76,7 +76,7 @@
         <div class="post-cont"> <!-- Message submission section -->
             <h1 class="post-top-text">Send a post Goose</h1> <!-- Section heading -->
 
-            <div class="post-type-cont"> <!-- Input container for message -->
+            <form class="post-type-cont"> <!-- Input container for message -->
                 <input class="type-bar" placeholder="Your email"> <!-- Email input -->
                 <input class="type-bar" placeholder="Your name"> <!-- Name input -->
                 <input class="type-bar-long" placeholder="Your message"> <!-- Message input -->
@@ -90,7 +90,7 @@
                 </select>
                 
                 <input class="send color-black" type="submit" placeholder="Subscribe"> <!-- Submit button -->
-            </div>
+            </form>
         </div>
     </main>
 
